@@ -21,18 +21,10 @@ ingredients.forEach(ingredient => {
 })
 
 list.append(...liArray)
-console.log(liArray);
 
 
 
 
-
-// const ulEl = document.createElement("li");
-// ulEl.textContent = ingredients;
-// console.log(ulEl)
-//  const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
-
-// ulEl.innerHTML = list;
 
 // Напиши скрипт, який для кожного елемента масиву ingredients:
 

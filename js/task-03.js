@@ -13,11 +13,17 @@
    },
  ];
 
- const ulElement = document.querySelector('.gallery');
- images.forEach(element => {
-   ulElement.insertAdjacentHTML(
-    'afterbegin',
-     `<li><img src = "${element.url}" alt = "${element.alt}"  width = "300" height = "300" /></li>`,
-   );
- });
+
+const ulElement = document.querySelector('ul');
+const arr = [];
+for (let i = 0; i < images.length; i++) {
+  const markup = `<li><img src=${images[i].url} alt=${images[i].alt} width = "300" height = "300" ></li>`;
+  arr.push(markup);
+}
+ ulElement.insertAdjacentHTML('afterbegin', arr.join(''));
+
+
+
+
+
 
